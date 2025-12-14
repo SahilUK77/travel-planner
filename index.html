@@ -1,0 +1,1455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Superb Tours & Travels</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Custom Fonts -->
+    <style>
+        @font-face {
+            font-family: 'Gilroy';
+            src: url('../fonts/Gilroy-ExtraBold.otf') format('opentype');
+            font-weight: 800;
+        }
+
+        @font-face {
+            font-family: 'Monument';
+            src: url('../fonts/MonumentExtended-Regular.otf') format('opentype');
+            font-weight: normal;
+        }
+
+        .gilroy {
+            font-family: 'Gilroy', sans-serif;
+        }
+
+        .monument {
+            font-family: 'Monument', sans-serif;
+        }
+    </style>
+
+    <script src="/assets/js/script.js" defer></script>
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header" data-header>
+        <div class="overlay" data-overlay></div>
+
+        <!-- Top Header -->
+        <!-- <div class="header-top">
+            <div class="container"> -->
+
+                <!-- Helpline -->
+                <!-- <a href="tel:+917389597443" class="helpline-box">
+                    <div class="icon-box">
+                        <i class="fa fa-phone"></i>
+                    </div>
+                    <div class="wrapper">
+                        <p class="helpline-title">For Further Inquiries :</p>
+                        <p class="helpline-number">+91-7389597443</p>
+                    </div>
+                </a> -->
+
+                <!-- Logo -->
+                <!-- <a href="#" class="logo">
+                    <img src="assets/images/stt.png" alt="STT Logo">
+                    <h1 class="gilroy">SUPERB TOURS & TRAVELS</h1>
+                </a> -->
+
+                <!-- Buttons -->
+                <!-- <div class="header-btn-group">
+                    <button class="search-btn" aria-label="Search"><i class="fa fa-search"></i></button>
+                    <button class="nav-open-btn" aria-label="Open Menu" data-nav-open-btn><i
+                            class="fa fa-bars"></i></button>
+                </div>
+            </div>
+        </div> -->
+
+        <!-- Bottom Header -->
+        <div class="header-bottom">
+            <div class="container">
+
+                <!-- Socials -->
+                <ul class="social-list">
+                    <li><a href="https://www.facebook.com/sahil.ullah.33" class="social-link" target="_blank"><i
+                                class="fa fa-facebook-official"></i></a></li>
+                    <li><a href="https://www.instagram.com/sahil_u.k_77" class="social-link" target="_blank"><i
+                                class="fa fa-instagram"></i></a></li>
+                    <li><a href="https://wa.me/917389597443" class="social-link" target="_blank"><i
+                                class="fa fa-whatsapp"></i></a></li>
+                </ul>
+
+                <!-- Navbar -->
+                <nav class="navbar" data-navbar>
+                    <div class="navbar-top">
+                        <a href="#" class="logo"><img src="assets/images/stt.png" alt="STT Logo"></a>
+                        <button class="nav-close-btn" aria-label="Close Menu" data-nav-close-btn><i
+                                class="fa fa-times"></i></button>
+                    </div>
+
+                    <ul class="navbar-list">
+                        <li><a href="#home" class="navbar-link">Home</a></li>
+                        <li><a href="#destination" class="navbar-link">Destinations</a></li>
+                        <li><a href="#package" class="navbar-link">Packages</a></li>
+                        <li><a href="#gallery" class="navbar-link">Gallery</a></li>
+                        <li><a href="#contact" class="navbar-link">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA -->
+                <button class="btn btn-primary">Book Now</button>
+            </div>
+        </div>
+    </header>
+
+    <!-- HERO -->
+    <section class="hero" id="home">
+        <div class="container">
+            <h2 class="h1 hero-title monument">Journey to explore world</h2>
+            <p class="hero-text">Planning to travel abroad? Discover the most popular international tour packages
+                trending this
+                season with SUPERB. Whether you're looking for romantic beach escapes, historic cities, cultural
+                experiences, or
+                family adventures, our international travel packages are thoughtfully designed for every kind of
+                traveler.</p>
+            <div class="btn-group">
+                <button class="btn btn-primary">Learn More</button>
+                <button class="btn btn-secondary">Book Now</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- TOUR SEARCH -->
+    <section class="tour-search">
+        <div class="container">
+            <form class="tour-search-form" action="#" method="post">
+                <div class="input-wrapper">
+                    <label for="destination" class="input-label">Search Destination</label>
+                    <input type="text" id="destination" name="destination" placeholder="Enter destination"
+                        class="input-field" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="people" class="input-label">Pax Number (No. of People)</label>
+                    <input type="number" id="people" name="people" min="1" placeholder="Enter number of people"
+                        class="input-field" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="checkin" class="input-label">Check-in Date</label>
+                    <input type="date" id="checkin" name="checkin" class="input-field" required>
+                </div>
+
+                <div class="input-wrapper">
+                    <label for="checkout" class="input-label">Check-out Date</label>
+                    <input type="date" id="checkout" name="checkout" class="input-field" required>
+                </div>
+
+                <button type="submit" class="btn btn-secondary">Inquire Now</button>
+            </form>
+        </div>
+    </section>
+
+
+    <section class="card-section">
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/Plane Flying Loader.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 175px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Flight</h3>
+            <p class="card-text">With over 12 years of expertise, we continue to take you to a seamless
+                Air-Travel.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/RP_Train_1.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 225px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Train</h3>
+            <p class="card-text">Join the STT family – Over 2 lakh happy customers have created their most
+                memorable Rail-Travel Experiences with us!</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/carr.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 225px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Taxi/Cab</h3>
+            <p class="card-text">Travel Hassle-free anywhere with our vast network of cab services,taken care of
+                our 50,000+ happy customers.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/Animated hotel icon.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 175px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Hotel</h3>
+            <p class="card-text">Choose from a vast selection of 300+ holidays, including unique experiences
+                that celebrate India's cultural diversity & luxurious hospitality.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/ALAIA.json" background="transparent" speed="1"
+                style="padding:25px; width: 250px; height: 275px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Cruise</h3>
+            <p class="card-text">A dedicated team of 1,000+ travel experts across 160+ locations in India and
+                NRI markets, ready to serve your travel needs by waterways also.</p>
+        </div>
+    </section>
+
+
+    <section class="popular" id="destination">
+        <div class="container">
+
+            <p class="section-subtitle">Uncover place</p>
+
+            <h2 class="h2 section-title" style="font-family:monument">Popular destination</h2>
+
+            <p class="section-text">
+                From the magical landscapes of Europe to the amazing charm of the Bangkok, our overseas holiday
+                deals include flights, hotels, guided sightseeing, and more – ensuring a seamless travel
+                experience. Trending destinations like Dubai, Singapore, Thailand, Italy and Paris are perfect
+                for families and couples alike, offering a mix of entertainment, culture, and world-class
+                hospitality.
+            </p>
+            <div class='code-block code-block-11' style='margin: 8px 0; clear: both;'> </div>
+
+            <ul class="popular-list">
+
+                <li>
+                    <div class="popular-card">
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/Moscow.webp" alt="Kremlin" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating"></div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Moscow, Russia</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Moskva River</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Flowing gracefully through Moscow, the Moskva River offers a scenic backdrop to
+                                the city's iconic skyline.
+                                A river cruise reveals the contrast between modern skyscrapers and historic
+                                buildings. First impressions are of serenity amidst a bustling capital.
+                                It’s especially enchanting during sunset when the city lights reflect on the
+                                water.
+                            </p>
+                        </div>
+                    </div>
+                </li>
+
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async"
+                                src="assets/images/Burj-Khalifa-world-Sheikh-Khalifah-ibn-Zayid-2010.webp"
+                                alt="Burj khalifa, dubai" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Dubai,UAE</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Burj khalifa</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Towering above the clouds, Burj Khalifa instantly stuns visitors with its
+                                immense height and shimmering glass facade.
+                                The view from the observation deck is breathtaking, offering a panoramic view of
+                                Dubai’s desert-meets-modernity landscape.
+                                It’s a marvel of engineering and ambition standing to the height of 830 metres.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/pexels-pixabay-161401-1.jpg"
+                                alt="Kyoto temple, japan" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Tokyo,Japan</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Kyoto temple</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Set among tranquil gardens and ancient forests, Kyoto’s temples exude peace and
+                                spirituality.
+                                The wooden architecture and soft rustling of leaves make a serene first
+                                impression.
+                                It’s Kinkaku-ji’s golden reflection or Fushimi Inari’s red torii gates, each
+                                temple is a poetic escape.
+                                These architecture is a part of ancient Japanese culture.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/paris.jpg" alt="Eiffel Tower" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Paris,France</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Eiffel Tower</a>
+                            </h3>
+
+                            <p class="card-text">
+                                As you approach, the Eiffel Tower rises elegantly above Paris, symbolizing
+                                romance and innovation.
+                                Its intricate iron lattice design impresses both day and night.
+                                The twinkling lights at dusk leave a magical first impression, attracting
+                                admirers from all over the world.
+                                The construction work began in January,1887 and was finished on March 31,1889.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/lotus.jpg" alt="Lotus temple" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">New Delhi,India</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Lotus Temple</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Shaped like a blooming lotus, this Baháʼí House of Worship immediately invokes
+                                calmness and unity.
+                                Surrounded by pools and gardens, it gives a sense of spiritual openness.
+                                The silence inside contrasts the noise of the city, offering peace to all
+                                visitors.
+                                The architect of the Lotus Temple was an Iranian, Fariborz Sahba.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/venice.jpg" alt="venice" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Venice,Italy</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">River Front</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Venice feels like stepping into a dream—gondolas gliding through canals,pastel
+                                buildings reflecting on the water.
+                                The absence of roads surprises first-timers,replaced by charming waterways and
+                                footbridges.It’s a timeless and romantic
+                                experience from the first glance.Historic architecture,the city was a major
+                                maritime power in the Middle Ages.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/Istanbul.webp" alt="Istanbul" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Istanbul,Turkiye</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Hagia Sophia</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Hagia Sophia, also known as Ayasofya, is a historic structure in Istanbul.It's a
+                                UNESCO World Heritage site.
+                                Standing at the crossroads of East and West, Hagia Sophia greets you with
+                                awe-inspiring domes and mosaics.
+                                Its history as a museum and mosque, adds layers to the first impression.
+                                The grandeur and sacred atmosphere are unforgettable.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/london.webp" alt="London" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">London,UK</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Westminster</a>
+                            </h3>
+
+                            <p class="card-text">
+                                The gothic spires of Westminster signals historical and political importance.
+                                Home to Big Ben,the iconic clock tower at the northern end of the Palace of
+                                Westminster and the UK Parliament,the area pulses with British tradition.
+                                The first impression is of solemnity, elegance & deep-rooted legacy.Completed in
+                                1859,recognized globally for its Gothic Revival architecture and the accuracy of
+                                its clock.
+
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/Sydney_Opera_House.jpg" alt="Opera House,Sydney"
+                                loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Sydney,Australia</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Opera House</a>
+                            </h3>
+
+                            <p class="card-text">
+                                An Opera House is a building specifically designed for opera performances,
+                                featuring a stage, orchestra pit,& seating for the audience.
+                                With its sail-like design perched on the harbor,Opera House captures attention.
+                                The contrast b/w its modern architecture & natural setting makes for a dramatic
+                                introduction.
+                                By night, it glows against the city skyline—a symbol of cultural vibrancy.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/singapore-.webp" alt="Singapore" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Singapore</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Sky-Scrapers & Nature</a>
+                            </h3>
+
+                            <p class="card-text">
+                                It is an island country & city-state in Southeast Asia.
+                                A city of dazzling contrasts, Singapore impresses with its spotless streets,
+                                futuristic architecture & lush greenery.
+                                From the moment you land, its efficiency & innovation stand out.
+                                Gardens by the Bay & Marina Bay Sands are awe-inspiring landmarks.
+                                Singapore's unique blend of tradition & modernity, along with its cleanliness &
+                                safety, makes it popular.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/Nyc.jpg" alt="Times Sqare,NYC" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">New York,USA</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Times Square</a>
+                            </h3>
+
+                            <p class="card-text">
+                                One of the world's busiest pedestrian intersections,it is also the hub of the
+                                Broadway Theater District & a major center of the world's entertainment
+                                industry.
+                                It overwhelms the senses with its neon lights, digital billboards & nonstop
+                                energy.
+                                The first impression is pure excitement—chaotic but captivating.
+                                It’s the heartbeat of Manhattan, alive 24/7 with people from every corner of the
+                                world.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+                <li>
+                    <div class="popular-card">
+
+                        <figure class="card-img">
+                            <img decoding="async" src="assets/images/Bang.webp" alt="Bangkok, Thailand" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <div class="card-rating">
+
+
+
+
+
+                            </div>
+
+                            <p class="card-subtitle">
+                                <a href="#">Bangkok,Thailand</a>
+                            </p>
+
+                            <h3 class="h3 card-title" style="font-family:gilroy">
+                                <a href="#">Buddha Temple</a>
+                            </h3>
+
+                            <p class="card-text">
+                                Bangkok is famous for its vibrant culture, rich history, delicious street food,
+                                bustling markets, and lively nightlife,and unique experiences like floating
+                                markets and Thai massage.
+                                Golden statues, incense-scented air, and ornate rooftops greet visitors to
+                                Thailand’s Buddha temples.
+                                The atmosphere is deeply spiritual and serene.
+                                First impressions include reverence and peace, especially in majestic sites like
+                                Wat Pho or Wat Arun.
+                            </p>
+
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <button class="btn btn-primary">More destinations</button>
+
+        </div>
+    </section>
+
+    <section class="package" id="package">
+        <div class="container">
+
+            <p class="section-subtitle">Popular Packages</p>
+
+            <h2 class="h2 section-title" style="font-family:monument">Checkout Our Packages</h2>
+
+            <p class="section-text">
+                Our premium international tours to Switzerland, Italy, and Paris come with curated experiences,
+                local cuisine, and handpicked stays. If you're after affordability, explore our budget-friendly
+                foreign tour deals to Vietnam, Sri Lanka, and Malaysia starting from competitive prices.
+            </p>
+
+            <ul class="package-list">
+
+                <li>
+                    <div class="package-card">
+
+                        <figure class="card-banner">
+                            <img decoding="async" src="assets/images/beach.jpg"
+                                alt="Experience The Great Holiday On Beach" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h3 class="h3 card-title">Experience The Hawaiian Beaches, USA</h3>
+
+                            <p class="card-text">
+                                Experience paradise on Earth with Hawaii’s sun-kissed beaches, turquoise waves,
+                                and swaying palms.
+                                From surfing at Waikiki to sunsets in Maui, every moment is postcard-perfect.
+                                Unwind, explore, and feel the spirit of Aloha in every breeze.
+                            </p>
+
+                            <ul class="card-meta-list">
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">7D/6N</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">pax: 10</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">Malaysia</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="card-price">
+
+                            <div class="wrapper">
+
+                                <p class="reviews">(25 reviews)</p>
+
+                                <div class="card-rating">
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <p class="price">
+                                ₹80,000
+                                <span>/ per person</span>
+                            </p>
+
+                            <button class="btn btn-secondary">Book Now</button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <div class="package-card">
+
+                        <figure class="card-banner">
+                            <img decoding="async" src="assets/images/Belgium.jpg"
+                                alt="Summer Holiday To The Oxolotan River" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h3 class="h3 card-title">Autmn Holiday to Brussels, Belgium</h3>
+
+                            <p class="card-text">
+                                Step into a fairytale in Brussels with its ornate squares, waffles, and
+                                world-famous chocolates.
+                                Marvel at the Grand Place, sip fine Belgian beer, and explore historic charm
+                                with modern flair.
+                                This European gem is elegance wrapped in cultural richness.
+                            </p>
+
+                            <ul class="card-meta-list">
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">7D/6N</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">pax: 10</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">Malaysia</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="card-price">
+
+                            <div class="wrapper">
+
+                                <p class="reviews">(20 reviews)</p>
+
+                                <div class="card-rating">
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <p class="price">
+                                ₹62,000
+                                <span>/ per person</span>
+                            </p>
+
+                            <button class="btn btn-secondary">Book Now</button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <div class="package-card">
+
+                        <figure class="card-banner">
+                            <img decoding="async" src="assets/images/Safai_SA.jpg"
+                                alt="Santorini Island's Weekend Vacation" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h3 class="h3 card-title">The Kenya Safari Vacation, Africa</h3>
+
+                            <p class="card-text">
+                                Embark on the ultimate wildlife adventure across Kenya’s stunning savannahs.
+                                Witness the Big Five in their natural habitat and sunsets over the Maasai Mara.
+                                Every safari ride brings you closer to the raw, untamed beauty of Africa.
+                            </p>
+
+                            <ul class="card-meta-list">
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">7D/6N</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">pax: 10</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">Malaysia</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="card-price">
+
+                            <div class="wrapper">
+
+                                <p class="reviews">(40 reviews)</p>
+
+                                <div class="card-rating">
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <p class="price">
+                                ₹55,000
+                                <span>/ per person</span>
+                            </p>
+
+                            <button class="btn btn-secondary">Book Now</button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <div class="package-card">
+
+                        <figure class="card-banner">
+                            <img decoding="async" src="assets/images/Switz.avif"
+                                alt="Experience The Great Holiday On Beach" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h3 class="h3 card-title">Mesmerising Switzerland Mountain Views</h3>
+
+                            <p class="card-text">
+                                Breathe in crisp alpine air as you gaze upon the snow-draped peaks of
+                                Switzerland.
+                                Whether it’s the Matterhorn or Lake Geneva’s calm reflections, nature here is
+                                pure art.
+                                Perfect for hikers, skiers, or those just chasing beauty.
+                            </p>
+
+                            <ul class="card-meta-list">
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">7D/6N</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">pax: 10</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">Malaysia</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="card-price">
+
+                            <div class="wrapper">
+
+                                <p class="reviews">(25 reviews)</p>
+
+                                <div class="card-rating">
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <p class="price">
+                                ₹85,500
+                                <span>/ per person</span>
+                            </p>
+
+                            <button class="btn btn-secondary">Book Now</button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <div class="package-card">
+
+                        <figure class="card-banner">
+                            <img decoding="async" src="assets/images/Hawai.jpg"
+                                alt="Experience The Great Holiday On Beach" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h3 class="h3 card-title">Experience The Alpes, Europe</h3>
+
+                            <p class="card-text">
+                                The Alps offer breathtaking mountain panoramas across France, Switzerland,
+                                Austria, and Italy.
+                                Ski the slopes, trek the trails, or relax in cozy alpine villages.
+                                A majestic escape where nature and adventure meet in harmony.
+                            </p>
+
+                            <ul class="card-meta-list">
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">7D/6N</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">pax: 10</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">Malaysia</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="card-price">
+
+                            <div class="wrapper">
+
+                                <p class="reviews">(25 reviews)</p>
+
+                                <div class="card-rating">
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <p class="price">
+                                ₹70,000
+                                <span>/ per person</span>
+                            </p>
+
+                            <button class="btn btn-secondary">Book Now</button>
+
+                        </div>
+
+                    </div>
+                </li>
+                <br>
+
+                <li>
+                    <div class="package-card">
+
+                        <figure class="card-banner">
+                            <img decoding="async" src="assets/images/Mald.jpg"
+                                alt="Experience The Great Holiday On Beach" loading="lazy">
+                        </figure>
+
+                        <div class="card-content">
+
+                            <h3 class="h3 card-title">Experience Weekend Holiday On Maldives Beach</h3>
+
+                            <p class="card-text">
+                                Welcome to the Maldives—where overwater villas meet crystal-clear lagoons and
+                                white sand bliss.
+                                Ideal for honeymoons, diving, or total relaxation in luxury.
+                                Every sunrise feels like a dream, and every wave whispers serenity.
+                            </p>
+
+                            <ul class="card-meta-list">
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">7D/6N</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">pax: 10</p>
+                                    </div>
+                                </li>
+
+                                <li class="card-meta-item">
+                                    <div class="meta-box">
+
+
+                                        <p class="text">Malaysia</p>
+                                    </div>
+                                </li>
+
+                            </ul>
+
+                        </div>
+
+                        <div class="card-price">
+
+                            <div class="wrapper">
+
+                                <p class="reviews">(25 reviews)</p>
+
+                                <div class="card-rating">
+
+
+
+
+
+                                </div>
+
+                            </div>
+
+                            <p class="price">
+                                ₹58,000
+                                <span>/ per person</span>
+                            </p>
+
+                            <button class="btn btn-secondary">Book Now</button>
+
+                        </div>
+
+                    </div>
+                </li>
+
+            </ul>
+
+            <button class="btn btn-primary">View All Packages</button>
+
+        </div>
+    </section>
+
+
+    <section class="gallery" id="gallery">
+        <div class="container">
+
+            <p class="section-subtitle">Photo Gallery</p>
+
+            <h2 class="h2 section-title" style="font-family:monument">Photo's From Travellers</h2>
+
+            <p class="section-text">
+                Dear travelers, we are grateful for being a part of your SUPERB Lifetime Memories!
+            </p>
+
+            <ul class="gallery-list">
+
+                <li class="gallery-item">
+                    <figure class="gallery-image">
+                        <img decoding="async" src="assets/images/kremlin-wall-night-moscow.avif" alt="Gallery image">
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure class="gallery-image">
+                        <img decoding="async" src="assets/images/NY.jpeg" alt="Gallery image">
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure class="gallery-image">
+                        <img decoding="async" src="assets/images/Bangkok-.jpg" alt="Gallery image">
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure class="gallery-image">
+                        <img decoding="async" src="assets/images/LON.jpg" alt="Gallery image">
+                    </figure>
+                </li>
+
+                <li class="gallery-item">
+                    <figure class="gallery-image">
+                        <img decoding="async" src="assets/images/blue-mosque-Turkey.jpg" alt="Gallery image">
+                    </figure>
+                </li>
+                <br><br>
+
+                <button class="btn btn-primary">See More Photos</button>
+
+            </ul>
+
+        </div>
+    </section>
+
+    <section class="card-section">
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/Shield icon.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 175px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Trusted Advisor</h3>
+            <p class="card-text">With over 12 years of expertise, we continue to lead with innovation and
+                technology to create seamless holidays.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/Relax.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 225px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Memorable Experiences</h3>
+            <p class="card-text">Join the STT family – Over 2 lakh happy customers have created their most
+                memorable Experiences with us</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/setting.json" background="transparent" speed="2"
+                style="padding:25px; width: 220px; height: 175px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Ease</h3>
+            <p class="card-text">Choose from a vast selection of 1,000+ holidays, including unique experiences
+                that celebrate India's cultural diversity.</p>
+        </div>
+
+        <div class="card">
+            <div class="card-icon"></div>
+            <lottie-player src="assets/animations/Network icon.json" background="transparent" speed="1"
+                style="padding:25px; width: 220px; height: 175px;" loop autoplay>
+            </lottie-player>
+            <h3 class="card-title">Connect</h3>
+            <p class="card-text">A dedicated team of 1,000+ travel experts across 160+ locations in India and
+                NRI markets, ready to serve your travel needs.</p>
+        </div>
+    </section>
+
+
+
+
+
+
+    <section class="cta" id="contact">
+        <div class="container">
+
+            <div class="cta-content">
+                <p class="section-subtitle">Call To Action</p>
+
+                <h2 class="h2 section-title" style="letter-spacing:2px; font-family:monument;">Ready For
+                    Unforgatable Travel. Remember Us!</h2>
+
+                <p class="section-text">
+                    With SUPERB, you don’t just book a trip – you unlock handpicked experiences, expert travel
+                    guidance, and 24x7 support. Our best international tour packages come with flexible
+                    itineraries and limited-time international trip offers, so you can travel the world without
+                    hassle.
+                </p>
+            </div>
+
+            <button class="btn btn-secondary">Contact Us !</button>
+
+        </div>
+    </section>
+
+    </article>
+    </main>
+
+
+
+
+
+
+
+    <footer class="footer">
+
+        <div class="footer-top">
+            <div class="container">
+
+                <div class="footer-brand">
+
+                    <p class="footer-text">
+                        Superb Tours & Travels is part of Sahil Booking Holdings Inc®., the world leader in online
+                        travel & related services.
+                    </p>
+                    <br>
+                    <p>
+                        Travel License No: 03513
+                    </p>
+                    <br><br>
+                    <img src="assets/images/stt.png" alt="STT Logo"
+                        style="max-width: 255px; display: block; margin: 0 15px;">
+                    <p style="font-size: 25px; cursor: pointer; font-family: gilroy;">SUPERB TOURS &
+                    <p style="font-size: 25px; cursor: pointer; font-family: gilroy; margin-left:40px;"> TRAVELS </p>
+                    </p>
+
+
+                </div>
+
+                <div class="footer-contact">
+
+                    <h4 class="contact-title">Contact Us</h4>
+
+                    <p class="contact-text">
+                        Feel free to contact and reach us !!
+                    </p>
+
+                    <ul>
+
+                        <li class="contact-item">
+
+
+                            <a class="contact-link">+91-7389597443</a>
+                        </li>
+
+                        <li class="contact-item">
+
+
+                            <a href="mailto:info.tourly.com" class="contact-link">info.tourly.com</a>
+                        </li>
+
+                        <li class="contact-item">
+
+
+                            <address>289, Bhopal, Madhya Pradesh</address>
+                        </li>
+
+                    </ul>
+
+                </div>
+
+                <div class="footer-form">
+
+                    <p class="form-text">
+                        Subscribe our newsletter for more update &amp; news !!
+                    </p>
+
+                    <br><br><br>
+
+                    <button type="submit" class="btn btn-secondary"
+                        style="transition: #a6c93b 0.3s ease;">Subscribe</button>
+
+                    <div class="social-icons">
+                        <i class="fa fa-facebook-official"
+                            onclick="window.open('https://www.facebook.com/sahil.ullah.33', '_blank')"></i>
+                        <i class="fa fa-instagram"
+                            onclick="window.open('https://www.instagram.com/sahil_u.k_77', '_blank')"></i>
+                        <i class="fa fa-envelope" onclick="window.open('mailto:sahilullah77@gmail.com')"></i>
+                        <i class="fa fa-whatsapp" onclick="window.open('https://wa.me/your-number')"></i>
+                    </div>
+                    <br><br>
+                    <p>Follow our Social Pages for upcoming exciting packages & more...</p>
+
+                </div>
+
+
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <div class="container">
+
+                <p class="copyright">
+                    &copy; 2024 <a href="">Sahil Ullah</a>. All rights reserved
+                </p>
+
+                <ul class="footer-bottom-list">
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">Privacy Policy</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">Term &amp; Condition</a>
+                    </li>
+
+                    <li>
+                        <a href="#" class="footer-bottom-link">FAQ</a>
+                    </li>
+
+                </ul>
+
+            </div>
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+    <a href="#top" class="go-top" data-go-top>
+
+    </a>
+
+
+
+</body>
+
+</html>
